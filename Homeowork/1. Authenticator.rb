@@ -1,3 +1,5 @@
+# Usage: Arrays, Hashes, Branching, While Loop
+
 users = [
             { username: "Kushagra", password: "password1" },
             { username: "Sarah", password: "password2" },
@@ -36,5 +38,3 @@ while attempts < 3
 end
 
 puts "You have exceeded the number of attempts" if attempts == 3
-
-# Usage: Arrays, Hashes, Branching, While Loop
