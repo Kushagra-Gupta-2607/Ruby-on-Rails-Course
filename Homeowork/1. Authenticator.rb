@@ -1,15 +1,15 @@
 # Usage: Arrays, Hashes, Branching, While Loop
 
 users = [
-            { username: "Kushagra", password: "password1" },
-            { username: "Sarah", password: "password2" },
-            { username: "John", password: "password3" },
-            { username: "Rose", password: "password4" },
-            { username: "Mia", password: "password5" }
+          { username: "Kushagra", password: "password1" },
+          { username: "Sarah", password: "password2" },
+          { username: "John", password: "password3" },
+          { username: "Rose", password: "password4" },
+          { username: "Mia", password: "password5" }
         ]
 
 def auth_user(username, password, list_of_users)
-   list_of_users.each { |user| return user if user[:username] == username && user[:password] == password}
+  list_of_users.each { |user| return user if user[:username] == username && user[:password] == password}
   "Credentials were not correct"
 end
 
@@ -18,7 +18,7 @@ puts "Welcome to the Authenticator"
 puts
 
 puts "This program will take input from the user and compare password."
-puts "If passwords is correct, you will get back the user object"
+puts "If passwords is correct, you will get back the user object\n"
 puts
 
 attempts = 0
@@ -38,3 +38,4 @@ while attempts < 3
 end
 
 puts "You have exceeded the number of attempts" if attempts == 3
+
